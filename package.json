@@ -17,7 +17,7 @@
     "parsing"
   ],
   "dependencies": {
-    "jsonparse": "git+https://github.com/roirevolution/jsonparse.git",
+    "jsonparse": "git+https://github.com/roirevolution/jsonparse.git#semver:2.0.0",
     "through": ">=2.2.7 <3"
   },
   "devDependencies": {
