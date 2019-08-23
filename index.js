@@ -14,9 +14,9 @@ var bufferFrom = Buffer.from && Buffer.from !== Uint8Array.from
 
 */
 
-exports.parse = function (path, map) {
+exports.parse = function (path, map, options) {
   var header, footer
-  var parser = new Parser()
+  var parser = new Parser(options)
   var stream = through(function (chunk) {
     if('string' === typeof chunk)
       chunk = bufferFrom ? Buffer.from(chunk) : new Buffer(chunk)
