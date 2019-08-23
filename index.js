@@ -14,6 +14,11 @@ var bufferFrom = Buffer.from && Buffer.from !== Uint8Array.from
 
 */
 
+/**
+ * @param {(string|Array)} path
+ * @param {Function} map
+ * @param {Object} options possible options: {parseNumbersAsStrings: boolean}
+ */
 exports.parse = function (path, map, options) {
   var header, footer
   var parser = new Parser(options)
